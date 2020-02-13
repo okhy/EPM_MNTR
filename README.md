@@ -1,1 +1,1 @@
-# SSR
+# EPAM mentoring monorepo
