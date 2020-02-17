@@ -1,0 +1,12 @@
+# General ignore resources:
+node_modules
+
+# Build files:
+dist
+server
+
+# dev stats
+coverage
+
+# git stuff
+.gitconfig

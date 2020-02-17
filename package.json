@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/okhy/EPM_MNTR/issues"
   },
-  "homepage": "https://github.com/okhy/EPM_MNTR#readme"
+  "homepage": "https://github.com/okhy/EPM_MNTR#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.0.5",
+    "@types/webpack": "4.1.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.4.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
 }
