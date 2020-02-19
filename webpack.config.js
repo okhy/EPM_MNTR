@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 
 module.exports = {
   entry: {
@@ -24,7 +24,26 @@ module.exports = {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: path.resolve(__dirname, "/node_modules"),
         use: ["ts-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              import: true,
+              modules: true,
+              sourceMap: true,
+              localIdentName: "[local]--[hash:base64:10]",
+              // camelCase: true,
+              importLoaders: 1
+              // exportOnlyLocals: true
+            }
+          },
+          { loader: "typed-css-modules-loader" }
+        ]
       }
     ]
   }
-};
+}
